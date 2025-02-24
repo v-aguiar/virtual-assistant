@@ -1,13 +1,16 @@
 from speech_to_text import listen
 from text_to_speech import speak
+from search_on_wikipedia import search_wikipedia
 
 def main():
     while True:
         command = listen()
         if command:
-            if 'pesquisar no Wikipedia' in command:
-                speak("Abrindo o Wikipedia.")
-                # Adicione o código para abrir o Wikipedia
+            if 'pesquisar' in command:
+                speak("Sobre o que você gostaria de pesquisar no Wikipedia?")
+                search_query = listen()  # Espera o usuário fornecer a pesquisa
+                result = search_wikipedia(search_query)
+                speak(result)
             elif 'abrir o YouTube' in command:
                 speak("Abrindo o YouTube.")
                 # Adicione o código para abrir o YouTube
