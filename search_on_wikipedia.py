@@ -1,6 +1,6 @@
 import wikipedia
 
-def search_wikipedia(query):
+def search(query):
     try:
         # Faz a busca no Wikipedia e retorna o resumo
         result = wikipedia.summary(query, sentences=1)
