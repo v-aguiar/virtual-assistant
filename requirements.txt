@@ -1,0 +1,8 @@
+speechrecognition
+pyaudio
+gTTS
+pyjokes
+wikipedia
+pygame
+pyttsx3
+geopy
