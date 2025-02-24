@@ -1,0 +1,23 @@
+# Ignorar ambiente virtual
+venv/
+
+# Ignorar arquivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar arquivos temporários do editor (VSCode, por exemplo)
+.vscode/
+
+# Ignorar arquivos de configuração do sistema
+*.log
+*.sqlite
+*.db
+
+# Ignorar arquivos temporários do sistema operacional
+Thumbs.db
+.DS_Store
+
+# Ignorar arquivos de áudio gerados pelo TTS, como .mp3 ou .wav
+*.mp3
+*.wav
